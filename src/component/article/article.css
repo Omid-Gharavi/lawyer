@@ -1,0 +1,16 @@
+.article{
+    background: #1d1d1d;
+    padding-block: 172px 242px;
+}
+
+@media screen and (max-width: 1050px) {
+    .article{
+        padding-inline: 3rem;
+    }
+}
+
+@media screen and (max-width: 950px){
+    .article{
+        padding-inline: 1rem;
+    }
+}

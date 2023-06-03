@@ -1,0 +1,78 @@
+.intro{
+    max-width: 1132px;
+    margin-inline: auto;
+    color: white;
+}
+
+.intro-container{
+    min-height: 174px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intro-container-left p{
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 161.52%;
+}
+
+.intro-container-right{
+    border-left: 2px solid #6A6A6A;
+    padding-left: 87px;
+}
+
+.intro-container-right div{
+    max-width: 475px;
+}
+
+.intro-container-right div p:nth-child(1){
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 162.52%;
+}
+
+.intro-container-right div p:nth-child(2){
+    font-size: 18px;
+    line-height: 162.52%;
+    opacity: .3;
+    margin-top: 1rem;
+}
+
+@media screen and (max-width: 1050px){
+    .intro-container{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro-container-left{
+        margin-bottom: 3rem;
+    }
+
+    .intro-container-right{
+        border-top: 2px solid #6A6A6A;
+        padding-top: 3rem;
+        border-left: none;
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 926px){
+    .intro-container{
+        align-content: center;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .intro-container-left p{
+        font-size: 2.1rem;
+    }
+
+    .intro-container-right div p:first-child{
+        font-size: 1.6rem;
+    }
+
+    .intro-container-right div p:last-child{
+        font-size: .8rem;
+    }
+}

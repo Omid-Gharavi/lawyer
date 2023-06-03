@@ -1,0 +1,88 @@
+.sub{
+    margin-top: 215px;
+    margin-inline: auto;
+    max-width: 1245px;
+}
+
+.sub-container{
+    min-height: 356px;
+    padding-inline: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 42px;
+    background: rgba(71, 71, 71, 0.5);
+}
+
+.sub-container > p{
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 137%;
+    color: white;
+}
+
+.form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 9px;
+}
+
+.form input{
+    width: 100%;
+    max-width: 276px;
+    height: 53px;
+    padding: 1rem 52px 1rem 23px;
+    outline: none;
+    border: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 137%;
+}
+
+.form input::placeholder{
+    font-style: italic;
+}
+
+.form button{
+    width: 100%;
+    max-width: 116px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 137%;
+    background: var(--btn-color);
+    border: none;
+    border-radius: 0px 8px 8px 0px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.form button:hover{
+    background: #d39908;
+}
+
+.form input:nth-child(1){
+    border-radius: 8px 0px 0px 8px;
+}
+
+@media screen and (max-width: 740px) {
+    .sub-container > p{
+        text-align: center;
+    }
+
+    .form input{
+        padding: unset;
+        padding-inline: .5rem;
+    }
+
+    .form input::-webkit-input-placeholder::after{
+        content: 'email';
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .sub-container > p{
+        font-size: 40px;
+    }
+}

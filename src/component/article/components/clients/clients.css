@@ -1,0 +1,136 @@
+.clients{
+    max-width: 1137px;
+    margin-top: 186px;
+    margin-inline: auto;
+}
+
+.clients-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.clients-header{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.clients-header > p{
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 77px;
+    color: white;
+}
+
+.clients-button{
+    align-self: flex-end;
+    display: flex;
+    gap: 18.78px;
+}
+
+.clients-button button{
+    background: var(--btn-color);
+    width: 90.61px;
+    height: 90.61px;
+    border-radius: 999px;
+    border: none;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.swiper-button-disabled{
+    background-color: white!important;
+}
+
+.clients-button button img{
+    width: 26px;
+    height: 26px;
+}
+
+.clients-slide{
+    margin-top: 100.15px;
+}
+
+.box{
+    position: relative;
+    width: 100%;
+    min-height: 368px;
+    padding: 36px 40px 38px 26px;
+    background: #1D1D1D;
+    border: 1.4px solid rgba(255, 255, 255, 0.1);
+    border-radius: 14px;
+    transition: .3s ease;
+}
+
+.number{
+    position: absolute;
+    top: 28px;
+    right: 40px;
+    opacity: 1;
+    visibility: visible;
+    transition: .3s ease;
+}
+
+.number img{
+    width: 100%;
+}
+
+.box:hover{
+    background: #2E2E2E;
+}
+
+.box:hover .number{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.box p{
+    color: white;
+}
+
+.box .name{
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.box .job{
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.box .description{
+    margin-top: 22px;
+    font-size: 14px;
+    line-height: 162.52%;
+    opacity: .3;
+}
+
+.swiper-slide{
+    width: none;
+}
+
+/*@media screen and (max-width: 820px) and (min-width: 720px){
+    .clients-slide{
+        padding-inline: 30px;
+    }
+}*/
+
+@media screen and (max-width: 605px){
+    .clients-header{
+        justify-content: center;
+        gap: 4rem;
+    }
+
+    .clients-header > p{
+        font-size: 2.7rem;
+        line-height: 70px;
+    }
+
+    .clients-slide{
+        margin-top: 3rem;
+    }
+}

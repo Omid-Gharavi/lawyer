@@ -1,0 +1,156 @@
+.faq{
+    max-width: 1140px;
+    margin-top: 197px;
+    margin-inline: auto;
+}
+
+.faq-container{
+    min-height: 629px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.left-side p:first-child{
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 138.02%;
+    color: white;
+}
+
+.left-side p:last-child{
+    margin-top: 14px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 162.52%;
+    color: white;
+    opacity: .3;
+}
+
+.right-side{
+    margin-top: 5.5rem;
+    width: 100%;
+    max-width: 539px;
+}
+
+.right-side p:nth-child(1){
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    color: white;
+}
+
+.right-side p:nth-child(2){
+    margin-top: 39px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 162.52%;
+    color: white;
+    opacity: .3;
+}
+
+.discription{
+    margin-top: 39px;
+}
+
+.gray-line{
+    width: 100%;
+    height: 3px;
+    background: white;
+    opacity: .05;
+    transition: .3s ease;
+}
+
+.dis-container{
+    padding-block: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dis-container p{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.dis-container div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 999px;
+    background: var(--btn-color);
+    border: none;
+    position: relative;
+    cursor: pointer;
+}
+
+.dis-container div:after{
+    content: '+';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    transform-origin: center;
+    transition: .3s ease;
+}
+
+.dis-container div.moved::after{
+    transform: rotate(-45deg);
+    transform-origin: center;
+    transition: .3s ease;
+}
+
+.test-close{
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: .3s ease;
+}
+
+.test-open{
+    display: grid;
+    grid-template-rows: 1fr;
+    padding-bottom: 2rem;
+    transition: .3s ease;
+}
+
+.explaination{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 162.52%;
+    color: white;
+    opacity: .3;
+    overflow: hidden;
+    transition: .3s ease;
+}
+
+@media screen and (max-width: 1137px) {
+    .faq-container{
+        justify-content: center;
+    }
+
+    .left-side p, .right-side > p{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .dis-container p{
+        font-size: 20px!important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .dis-container p{
+        font-size: 1rem!important;
+    }
+
+    .real{
+        display: none;
+    }
+
+    .left-side p:last-child, .right-side p:nth-child(2){
+        font-size: 1rem;
+    }
+    
+}

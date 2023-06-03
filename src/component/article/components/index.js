@@ -1,0 +1,7 @@
+export { default as Intro } from './intro/Intro'
+export { default as Practice } from './practice/Practice'
+export { default as Gifts } from './gifts/Gifts'
+export { default as Clients } from './clients/Clients'
+export { default as Team } from './team/Team'
+export { default as Faq } from './faq/Faq'
+export { default as Sub } from './subscribe/Sub'
