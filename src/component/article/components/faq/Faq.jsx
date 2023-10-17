@@ -18,7 +18,7 @@ const Discription = ({ title }) => {
                     )
             }
         </div>
-        {
+        {/* {
             open ?
                 (
                     <div className="test-open">
@@ -41,7 +41,15 @@ const Discription = ({ title }) => {
                         </div>
                     </div>
                 )
-        }
+        } */}
+        <div className={open ? 'test-open' : 'test-close'}>
+            <div className='explaination '>
+                Amet minim mollit non deserunt ullamco est sit
+                aliqua dolor do amet sint. Velit officia consequatduis
+                enim velit mollit Exer. Amet minim mollit non deserunt
+                ullamco est sit aliqua dolor do amet sint. Velit officia consequatduis enim velit mollit Exer.
+            </div>
+        </div>
     </>)
 }
 
